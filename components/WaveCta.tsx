@@ -4,12 +4,9 @@ import Button from 'components/Button';
 import ButtonGroup from 'components/ButtonGroup';
 import Container from 'components/Container';
 import SectionTitle from 'components/SectionTitle';
-import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { media } from 'utils/media';
 
 export default function WaveCta() {
-  const { setIsModalOpened } = useNewsletterModalContext();
-
   return (
     <>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -21,15 +18,13 @@ export default function WaveCta() {
       </svg>
       <CtaWrapper>
         <Container>
-          <Title>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus delectus?</Title>
+          <Title>Contact Us 24/7</Title>
+          <Email>aleafelixgambit@playerprotectionlegal.com</Email>
+          <Divider>OR</Divider>
+          <ConsultationTitle>Get Your Free Consultation!</ConsultationTitle>
           <CustomButtonGroup>
-            <Button onClick={() => setIsModalOpened(true)}>
-              Subscribe to the newsletter <span>&rarr;</span>
-            </Button>
-            <NextLink href="/features" passHref>
-              <OutlinedButton transparent>
-                Features <span>&rarr;</span>
-              </OutlinedButton>
+            <NextLink href="/contact" passHref>
+              <Button as="a">REQUEST APPOINTMENT <span>&rarr;</span></Button>
             </NextLink>
           </CustomButtonGroup>
         </Container>
@@ -50,14 +45,50 @@ const CtaWrapper = styled.div`
 
 const Title = styled(SectionTitle)`
   color: rgb(var(--textSecondary));
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 `;
 
-const OutlinedButton = styled(Button)`
-  border: 1px solid rgb(var(--textSecondary));
+const Email = styled.p`
+  font-size: 2rem;
+  font-weight: 600;
   color: rgb(var(--textSecondary));
+  margin-bottom: 1.5rem;
+  text-align: center;
+  word-break: break-all;
+
+  ${media('<=tablet')} {
+    font-size: 1.6rem;
+  }
+
+  ${media('<=phone')} {
+    font-size: 1.4rem;
+  }
+`;
+
+const Divider = styled.p`
+  font-size: 1.4rem;
+  color: rgba(var(--textSecondary), 0.6);
+  margin: 1.5rem 0;
+  text-align: center;
+`;
+
+const ConsultationTitle = styled.h3`
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: rgb(var(--textSecondary));
+  margin-bottom: 2rem;
+  text-align: center;
+
+  ${media('<=tablet')} {
+    font-size: 2rem;
+  }
+
+  ${media('<=phone')} {
+    font-size: 1.6rem;
+  }
 `;
 
 const CustomButtonGroup = styled(ButtonGroup)`
   justify-content: center;
+  margin-top: 2rem;
 `;

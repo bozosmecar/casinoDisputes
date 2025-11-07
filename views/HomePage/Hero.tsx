@@ -5,28 +5,29 @@ import ButtonGroup from 'components/ButtonGroup';
 import Container from 'components/Container';
 import HeroIllustration from 'components/HeroIllustation';
 import OverTitle from 'components/OverTitle';
-import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { media } from 'utils/media';
 
 export default function Hero() {
-  const { setIsModalOpened } = useNewsletterModalContext();
-
   return (
     <HeroWrapper>
       <Contents>
-        <CustomOverTitle>the coolest, saas product you have ever seen</CustomOverTitle>
-        <Heading>Make your life easier with our SaaS</Heading>
+        <CustomOverTitle>Protecting players since 2010</CustomOverTitle>
+        <Heading>Protecting Your Rights Against Unfair Online Casinos</Heading>
         <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, tempora qui. Explicabo voluptate iure ipsum molestias
-          repudiandae perspiciatis nostrum praesentium, unde pariatur tempora magni rem. Necessitatibus facilis obcaecati ratione.
+          At Player Protection Legal we specialise in online casino disputes. Our experienced team helps players recover
+          withheld winnings, challenge unfair terms, and pursue chargebacks or legal action when necessary. Start with a free
+          consultation — you pay nothing upfront unless we recover funds for you.
         </Description>
         <CustomButtonGroup>
-          <Button onClick={() => setIsModalOpened(true)}>
-            Subscribe to the newsletter <span>&rarr;</span>
-          </Button>
-          <NextLink href="#whitepaper" passHref>
+          <NextLink href="/contact" passHref>
+            <Button>
+              Get a Free Consultation <span>&rarr;</span>
+            </Button>
+          </NextLink>
+
+          <NextLink href="/services" passHref>
             <Button transparent>
-              Features <span>&rarr;</span>
+              View Services <span>&rarr;</span>
             </Button>
           </NextLink>
         </CustomButtonGroup>
@@ -68,14 +69,14 @@ const ImageContainer = styled.div`
   justify-content: flex-end;
   align-items: flex-start;
 
-  svg {
+  img {
     max-width: 45rem;
   }
 
   ${media('<=desktop')} {
     margin-top: 2rem;
     justify-content: center;
-    svg {
+    img {
       max-width: 80%;
     }
   }

@@ -38,7 +38,7 @@
 
 ## Table Of Contents
 
-- [Features](#-features)
+- [Services](#-services)
 - [Getting Started](#-getting-started)
 - [One click deploy](#one-click-deploy)
 - [Built With](#-built-with)
@@ -48,7 +48,7 @@
 - [Contributors](#-contributors)
 - [License](#-license)
 
-## Features
+## Services
 
 - ⚡ **Next.js** - React framework for static rendering
 - **Best SEO setup** - Meta Tags, JSON-LD and Open Graph Tags

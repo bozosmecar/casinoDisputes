@@ -1,53 +1,115 @@
-import NextImage from 'next/image';
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Collapse from 'components/Collapse';
 import Container from 'components/Container';
 import OverTitle from 'components/OverTitle';
 import SectionTitle from 'components/SectionTitle';
-import ThreeLayersCircle from 'components/ThreeLayersCircle';
+// replaced ThreeLayersCircle with a numbered badge
 import { media } from 'utils/media';
 
 const TABS = [
   {
-    title: 'Find relevant media contacts - multiline title',
+    title: 'How does the "No Win, No Fee" arrangement work?',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
-    imageUrl: '/demo-illustration-3.png',
+      '<p>We operate on a contingency fee basis, meaning you pay no upfront costs for our services. Our fee is a percentage of the amount recovered, agreed upon before we begin your case. If we don’t win or recover funds on your behalf, you owe us nothing.</p>',
     baseColor: '249,82,120',
     secondColor: '221,9,57',
   },
   {
-    title: 'Another amazing feature',
+    title: 'Do I need to be located in the same country as Player Protection Legal to use your services?',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
-    imageUrl: '/demo-illustration-4.png',
+      '<p>No, we serve clients internationally. Thanks to digital communication, we can represent players from all over the world. Our expertise in international gambling law allows us to handle cases involving casinos based in different jurisdictions.</p>',
     baseColor: '57,148,224',
     secondColor: '99,172,232',
   },
   {
-    title: 'And yet... another truly fascinating feature',
+    title: 'What jurisdictions do you cover in your legal services?',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
-    imageUrl: '/demo-illustration-5.png',
+      '<p>We specialize in cases involving online casinos operating under licenses from jurisdictions like Curaçao, Costa Rica, Panama, and other grey market regions. Our team is well-versed in international law, enabling us to assist clients across Europe and beyond.</p>',
     baseColor: '88,193,132',
     secondColor: '124,207,158',
+  },
+  {
+    title: 'What information should I provide during the initial consultation?',
+    description:
+      '<ul><li><strong>Communication Records:</strong> Emails, chat logs, or any correspondence with the casino.</li><li><strong>Transaction History:</strong> Proof of deposits, withdrawals, and any disputed amounts.</li><li><strong>Terms and Conditions:</strong> Copies or links to the casino’s terms at the time of your account creation.</li><li><strong>Relevant Documents:</strong> Any additional evidence that supports your claim.</li></ul>',
+    baseColor: '249,140,64',
+    secondColor: '245,115,54',
+  },
+  {
+    title: 'How long does it typically take to resolve a case?',
+    description:
+      '<p>The duration varies depending on the complexity of your case and the responsiveness of the casino. Some disputes are resolved within weeks through negotiation, while others may take several months if legal action is necessary.</p>',
+    baseColor: '149,102,255',
+    secondColor: '120,86,230',
+  },
+  {
+    title: 'Is my personal information safe with your firm?',
+    description:
+      '<p>Absolutely. We adhere to strict confidentiality protocols and data protection laws. Your personal information is used solely for your case and is not shared with unauthorized parties.</p>',
+    baseColor: '88,193,132',
+    secondColor: '124,207,158',
+  },
+  {
+    title: 'Can you assist if I played at an unlicensed or illegal online casino?',
+    description:
+      '<p>Yes, we can evaluate your situation. While recovering funds from unlicensed or illegal casinos can be challenging, our expertise in dealing with such entities allows us to advise you on the best possible course of action.</p>',
+    baseColor: '57,148,224',
+    secondColor: '99,172,232',
+  },
+  {
+    title: 'What if the online casino is based in a different country?',
+    description:
+      '<p>Our team specializes in international gambling law and can handle cases involving casinos based abroad. We navigate cross-border legal complexities to advocate effectively on your behalf.</p>',
+    baseColor: '249,82,120',
+    secondColor: '221,9,57',
+  },
+  {
+    title: 'Do you handle cases related to self-exclusion violations or gambling addiction?',
+    description:
+      '<p>Yes, we assist clients when casinos fail to honor self-exclusion agreements or engage in practices that exploit gambling addiction. We can take legal action to hold these casinos accountable for their negligence.</p>',
+    baseColor: '149,102,255',
+    secondColor: '120,86,230',
+  },
+  {
+    title: 'What if I inadvertently violated the casino\'s terms and conditions?',
+    description:
+      '<p>Each case is unique. During your free initial consultation, we’ll assess the specifics of your situation. Even if you’ve violated certain terms, the casino may still have legal obligations they must uphold. We’ll advise you on your options.</p>',
+    baseColor: '88,193,132',
+    secondColor: '124,207,158',
+  },
+  {
+    title: 'How will we communicate throughout the legal process?',
+    description:
+      '<p>We offer flexible communication methods, including email, phone calls, and video conferencing. We’ll provide regular updates and are always available to answer your questions.</p>',
+    baseColor: '57,148,224',
+    secondColor: '99,172,232',
+  },
+  {
+    title: 'Do you represent clients under the age of 18?',
+    description:
+      '<p>We cannot represent minors directly. If you are under 18, please have a parent or legal guardian contact us to discuss potential representation.</p>',
+    baseColor: '249,140,64',
+    secondColor: '245,115,54',
+  },
+  {
+    title: 'Do you offer services to online casinos or only to players?',
+    description:
+      '<p>We are dedicated exclusively to representing players. We do not provide legal services to online casinos, ensuring our commitment to advocating for individual player rights without conflicts of interest.</p>',
+    baseColor: '149,102,255',
+    secondColor: '120,86,230',
+  },
+  {
+    title: 'How do I get started with Player Protection Legal?',
+    description:
+      '<p>Simply contact us via our online form, email, or phone to schedule your <strong>free initial consultation</strong>. We’ll discuss your case confidentially and advise you on the next steps—all with no obligation and no upfront fees.</p>',
+    baseColor: '249,82,120',
+    secondColor: '221,9,57',
   },
 ];
 
 export default function FeaturesGallery() {
   const [currentTab, setCurrentTab] = useState(TABS[0]);
-
-  const imagesMarkup = TABS.map((singleTab, idx) => {
-    const isActive = singleTab.title === currentTab.title;
-    const isFirst = idx === 0;
-
-    return (
-      <ImageContainer key={singleTab.title} isActive={isActive}>
-        <NextImage src={singleTab.imageUrl} alt={singleTab.title} layout="fill" objectFit="contain" priority={isFirst} />
-      </ImageContainer>
-    );
-  });
 
   const tabsMarkup = TABS.map((singleTab, idx) => {
     const isActive = singleTab.title === currentTab.title;
@@ -56,7 +118,7 @@ export default function FeaturesGallery() {
       <Tab isActive={isActive} key={idx} onClick={() => handleTabClick(idx)}>
         <TabTitleContainer>
           <CircleContainer>
-            <ThreeLayersCircle baseColor={isActive ? 'transparent' : singleTab.baseColor} secondColor={singleTab.secondColor} />
+            <NumberBadge isActive={isActive}>{idx + 1}.</NumberBadge>
           </CircleContainer>
           <h4>{singleTab.title}</h4>
         </TabTitleContainer>
@@ -76,12 +138,11 @@ export default function FeaturesGallery() {
   return (
     <FeaturesGalleryWrapper>
       <Content>
-        <OverTitle>features</OverTitle>
-        <SectionTitle>What are you signing in for?</SectionTitle>
+        <OverTitle>services</OverTitle>
+        <SectionTitle>What are you signing up for?</SectionTitle>
       </Content>
       <GalleryWrapper>
         <TabsContainer>{tabsMarkup}</TabsContainer>
-        {imagesMarkup}
       </GalleryWrapper>
     </FeaturesGalleryWrapper>
   );
@@ -126,49 +187,24 @@ const TabsContainer = styled.div`
   }
 `;
 
-const ImageContainer = styled.div<{ isActive: boolean }>`
-  position: relative;
-  overflow: hidden;
-  border-radius: 0.8rem;
-  flex: ${(p) => (p.isActive ? '2' : '0')};
-  box-shadow: var(--shadow-md);
-
-  &:before {
-    display: block;
-    content: '';
-    width: 100%;
-    padding-top: calc((9 / 16) * 100%);
-  }
-
-  & > div {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
-  ${media('<=desktop')} {
-    width: ${(p) => (p.isActive ? '100%' : '0')};
-  }
-`;
-
 const Tab = styled.div<{ isActive: boolean }>`
   display: flex;
   flex-direction: column;
-  padding: 2rem 1.5rem;
+  padding: 2.4rem 2rem;
   background: rgb(var(--cardBackground));
   box-shadow: var(--shadow-md);
-  opacity: ${(p) => (p.isActive ? 1 : 0.6)};
   cursor: pointer;
-  border-radius: 0.6rem;
-  transition: opacity 0.2s;
+  border-radius: 0.8rem;
+  transition: box-shadow 0.18s, transform 0.12s;
 
-  font-size: 1.6rem;
-  font-weight: bold;
+  /* make tabs larger/wider by default and keep same size when active */
+  min-width: 36rem;
+  font-size: 1.65rem;
+  font-weight: 700;
 
   ${media('<=desktop')} {
     width: 100%;
+    min-width: auto;
   }
 `;
 
@@ -199,9 +235,25 @@ const TabContent = styled.div`
 `;
 
 const CircleContainer = styled.div`
-  flex: 0 calc(5rem + 1.5rem);
-
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  flex: 0 0 auto;
   ${media('<=tablet')} {
-    flex: 0 calc(4rem + 1.25rem);
+    margin-right: 0.75rem;
   }
+`;
+
+const NumberBadge = styled.div<{ isActive?: boolean }>`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 999px;
+  background: ${(p) => (p.isActive ? 'rgb(var(--primary))' : 'transparent')};
+  color: ${(p) => (p.isActive ? 'white' : 'rgb(var(--muted))')};
+  border: 1.5px solid rgba(0,0,0,0.06);
+  font-weight: 700;
+  font-size: 1.25rem;
 `;

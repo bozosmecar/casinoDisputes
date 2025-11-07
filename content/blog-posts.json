@@ -1,0 +1,22 @@
+[
+  {
+    "id": "test-article",
+    "slug": "test-article",
+    "title": "Getting Started with Casino Disputes",
+    "description": "Learn the basics of understanding and resolving casino disputes effectively.",
+    "date": "2025-11-06",
+    "tags": "casino,disputes,guide",
+    "imageUrl": "/posts/test-article/image.jpg",
+    "content": "# Getting Started\n\nCasino disputes can be complex, but with the right information, you can navigate them effectively.\n\n## Understanding the Process\n\nWhen a dispute arises, it's important to document everything and follow proper channels.\n\n### Key Steps\n\n1. Document all transactions\n2. Keep communication records\n3. File complaints through official channels\n4. Track your case status"
+  },
+  {
+    "id": "dispute-resolution-guide",
+    "slug": "dispute-resolution-guide",
+    "title": "Complete Guide to Dispute Resolution",
+    "description": "A comprehensive guide to resolving casino disputes step by step.",
+    "date": "2025-11-05",
+    "tags": "disputes,resolution,help",
+    "imageUrl": "/posts/dispute-guide.jpg",
+    "content": "# Dispute Resolution Guide\n\nThis guide covers everything you need to know about resolving casino disputes.\n\n## Types of Disputes\n\n- Withdrawal issues\n- Account access problems\n- Bonus disputes\n- Technical issues\n\n## Resolution Timeline\n\nMost disputes are resolved within 30-60 days."
+  }
+]
