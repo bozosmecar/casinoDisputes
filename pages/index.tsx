@@ -76,12 +76,7 @@ export default function Homepage() {
             </ul>
           </BasicSection>
 
-          <BasicSection imageUrl="/signing.png" title="Why We Succeed Where Others Fail" overTitle="What we do">
-            <p>
-              Our network doesn't just send complaint letters — we deploy localized legal strategies that hit casinos where it hurts most.
-              From regulatory complaints to coordinated legal demands, we leverage our international presence to maximize pressure and
-              secure settlements.
-            </p>
+          <BasicSection imageUrl="/signing.png" title="Holding Offshore Casinos Accountable" overTitle="What we do">
             <p>We've successfully challenged the most problematic offshore platforms, including:</p>
             <ul>
               <li>Curacao-licensed casino networks</li>
