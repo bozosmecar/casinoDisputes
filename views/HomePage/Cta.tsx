@@ -14,9 +14,10 @@ export default function Cta() {
       <Container>
         <Stack>
           <OverTitle>Contact Us</OverTitle>
-          <SectionTitle>Ready to Get Your Case Resolved?</SectionTitle>
+          <SectionTitle>Why We Succeed Where Others Fail</SectionTitle>
           <Description>
-            Our experienced legal team is ready to help you. Contact us today to discuss your casino dispute and get started on your path to resolution.
+            Our network doesn't just send complaint letters — we deploy localized legal strategies that hit casinos where it hurts most. 
+            From regulatory complaints to coordinated legal demands, we leverage our international presence to maximize pressure and secure settlements.
           </Description>
           <ButtonGroup>
             <NextLink href="/services" passHref>

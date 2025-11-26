@@ -8,10 +8,9 @@ export default function ContactPage() {
   return (
     <Page
       title="Contact"
-      description="Need help with an online casino dispute? Describe your issue and we will provide a free consultation outlining your options."
+      description="Get a free consultation from Casino-Disputes.com. Our global legal network forces dishonest casinos to return what they owe. No-Win, No-Fee."
     >
       <ContactContainer>
-
         <InformationSection />
         <FormSection />
       </ContactContainer>

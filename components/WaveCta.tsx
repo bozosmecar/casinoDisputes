@@ -19,12 +19,14 @@ export default function WaveCta() {
       <CtaWrapper>
         <Container>
           <Title>Contact Us 24/7</Title>
-          <Email>aleafelixgambit@playerprotectionlegal.com</Email>
+          <Email>contact@casino-disputes.com</Email>
           <Divider>OR</Divider>
           <ConsultationTitle>Get Your Free Consultation!</ConsultationTitle>
           <CustomButtonGroup>
             <NextLink href="/contact" passHref>
-              <Button as="a">REQUEST APPOINTMENT <span>&rarr;</span></Button>
+              <Button as="a">
+                REQUEST APPOINTMENT <span>&rarr;</span>
+              </Button>
             </NextLink>
           </CustomButtonGroup>
         </Container>

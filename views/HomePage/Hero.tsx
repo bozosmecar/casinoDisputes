@@ -11,12 +11,12 @@ export default function Hero() {
   return (
     <HeroWrapper>
       <Contents>
-        <CustomOverTitle>Protecting players since 2010</CustomOverTitle>
-        <Heading>Protecting Your Rights Against Unfair Online Casinos</Heading>
+        <CustomOverTitle>Global Legal Network | No-Win, No-Fee Recovery</CustomOverTitle>
+        <Heading>We Force Dishonest Casinos to Return What They Owe</Heading>
         <Description>
-          At Player Protection Legal we specialise in online casino disputes. Our experienced team helps players recover
-          withheld winnings, challenge unfair terms, and pursue chargebacks or legal action when necessary. Start with a free
-          consultation — you pay nothing upfront unless we recover funds for you.
+          We are Casino-Disputes.com, the global legal network that forces dishonest online casinos to return what they owe. 
+          Through our international alliance of gaming law specialists and proven success in securing player compensation, 
+          we deliver justice where others fail.
         </Description>
         <CustomButtonGroup>
           <NextLink href="/contact" passHref>

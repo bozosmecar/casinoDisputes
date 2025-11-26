@@ -16,7 +16,7 @@ const TABS = [
     secondColor: '221,9,57',
   },
   {
-    title: 'Do I need to be located in the same country as Player Protection Legal to use your services?',
+    title: 'Do I need to be located in the same country as Casino-Disputes.com to use your services?',
     description:
       '<p>No, we serve clients internationally. Thanks to digital communication, we can represent players from all over the world. Our expertise in international gambling law allows us to handle cases involving casinos based in different jurisdictions.</p>',
     baseColor: '57,148,224',
@@ -100,7 +100,7 @@ const TABS = [
     secondColor: '120,86,230',
   },
   {
-    title: 'How do I get started with Player Protection Legal?',
+    title: 'How do I get started with Casino-Disputes.com?',
     description:
       '<p>Simply contact us via our online form, email, or phone to schedule your <strong>free initial consultation</strong>. We’ll discuss your case confidentially and advise you on the next steps—all with no obligation and no upfront fees.</p>',
     baseColor: '249,82,120',

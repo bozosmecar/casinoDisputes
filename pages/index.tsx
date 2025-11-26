@@ -14,42 +14,81 @@ export default function Homepage() {
         <title>{EnvVars.SITE_NAME}</title>
         <meta
           name="description"
-          content="Tempor nostrud velit fugiat nostrud duis incididunt Lorem deserunt est tempor aute dolor ad elit."
+          content="Casino-Disputes.com - Global legal network that forces dishonest online casinos to return what they owe. No-Win, No-Fee Recovery."
         />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://casino-disputes.vercel.app/" />
+        <meta property="og:title" content="Casino-Disputes.com | Global Legal Network" />
+        <meta
+          property="og:description"
+          content="We force dishonest online casinos to return what they owe. No-Win, No-Fee Recovery. Proven success in over 1,000 cases."
+        />
+        <meta property="og:image" content="https://casino-disputes.vercel.app/justice.png" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://casino-disputes.vercel.app/" />
+        <meta property="twitter:title" content="Casino-Disputes.com | Global Legal Network" />
+        <meta
+          property="twitter:description"
+          content="We force dishonest online casinos to return what they owe. No-Win, No-Fee Recovery. Proven success in over 1,000 cases."
+        />
+        <meta property="twitter:image" content="https://casino-disputes.vercel.app/justice.png" />
       </Head>
       <HomepageWrapper>
         <WhiteBackgroundContainer>
           <Hero />
-          <BasicSection imageUrl="/demo-illustration-1.png" title="Protecting Your Rights Against Unfair Online Casinos" overTitle="Who we are">
-            <p>
-              At Player Protection Legal, we are a dedicated team of legal experts with over 12 years of experience in online casino
-              disputes. Our mission is to protect players from unlawful terms and unfair practices, and to help recover funds that have
-              been wrongfully withheld.
-            </p>
-            <p>
-              We prioritise confidentiality and practical outcomes — starting with a free initial consultation and a results-driven,
-              no-win, no-fee approach whenever appropriate.
-            </p>
-          </BasicSection>
-
-          <BasicSection imageUrl="/demo-illustration-8.png" title="A clear, results-driven process" overTitle="Our approach" reversed>
-            <p>
-              We follow a simple four-step process designed to move your case forward quickly: a free consultation, a thorough case
-              evaluation, a tailored legal strategy, and proactive action to recover funds or negotiate a settlement.
-            </p>
+          <BasicSection imageUrl="/demo-illustration-1.png" title="Our Global Reach & Track Record" overTitle="Who we are">
             <ul>
-              <li>Free initial consultation to assess your case</li>
-              <li>In-depth case evaluation and evidence review</li>
-              <li>Custom legal strategy tailored to your situation</li>
+              <li>Legal partners spanning multiple jurisdictions worldwide</li>
+              <li>Specialized expertise in offshore operators</li>
+              <li>Successful recoveries for players across continents</li>
+              <li>Comprehensive understanding of international gambling regulations</li>
+              <li>Proven success in over 1,000 cases</li>
+              <li>Resolution-focused approach prioritizing fast settlements</li>
+              <li>Persistent advocacy with battles fought for up to 2 years when necessary</li>
             </ul>
           </BasicSection>
 
-          <BasicSection imageUrl="/signing.png" title="How we can help" overTitle="What we do">
+          <BasicSection
+            imageUrl="/demo-illustration-8.png"
+            title="These Casino Tricks Have Met Their Match"
+            overTitle="Casino Scam vs Our Legal Counter-Attack"
+            reversed
+          >
+            <ul>
+              <li>
+                <strong>Ignored self-exclusion</strong> → Full refund under duty of care laws
+              </li>
+              <li>
+                <strong>"Bonus abuse" accusations</strong> → Unfair terms invalidated
+              </li>
+              <li>
+                <strong>Withdrawals blocked "under review"</strong> → Immediate regulator escalation
+              </li>
+              <li>
+                <strong>Account locked with balance</strong> → Chargeback + civil claim combination
+              </li>
+              <li>
+                <strong>Addiction exploitation</strong> → Maximum available damages pursued
+              </li>
+            </ul>
+          </BasicSection>
+
+          <BasicSection imageUrl="/signing.png" title="Why We Succeed Where Others Fail" overTitle="What we do">
             <p>
-              Our services cover recovery of unpaid winnings, dispute resolution, chargeback assistance, data privacy matters, and
-              legal action against operators with questionable practices. If a casino has treated you unfairly, we’ll explore every
-              avenue to get your money back.
+              Our network doesn't just send complaint letters — we deploy localized legal strategies that hit casinos where it hurts most.
+              From regulatory complaints to coordinated legal demands, we leverage our international presence to maximize pressure and
+              secure settlements.
             </p>
+            <p>We've successfully challenged the most problematic offshore platforms, including:</p>
+            <ul>
+              <li>Curacao-licensed casino networks</li>
+              <li>Crypto-only gambling platforms</li>
+              <li>Unregulated sports betting sites</li>
+              <li>Jurisdiction-hopping operators</li>
+            </ul>
             <p>
               Learn more on our <Link href="/services">services</Link> page or <Link href="/contact">get a free consultation</Link> to
               discuss your situation.

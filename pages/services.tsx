@@ -49,15 +49,20 @@ const FEATURES = [
 
 export default function ServicesPage() {
   return (
-    <Page title="Services" description="Legal services to help players dispute unfair online casino practices.">
+    <Page
+      title="Services"
+      description="Our global legal network deploys localized strategies to force dishonest casinos to return what they owe. No-Win, No-Fee Recovery."
+    >
       <Wrapper>
         <ArticlesSection>
           <StyledContainer>
-            <MainTitle>Why You May Need the Top Lawyers</MainTitle>
+            <MainTitle>Why We Succeed Where Others Fail</MainTitle>
             <IntroText>
               <LetterA>A</LetterA>
               <span>
-                t Player Protection Legal, we offer a comprehensive range of legal services tailored to defend players against unfair practices by online casinos. With over 12 years of specialized experience, our team is dedicated to securing your rights and winnings. Explore our key service areas below to discover how we can assist you
+                t Casino-Disputes.com, our global legal network doesn't just send complaint letters — we deploy localized legal strategies
+                that hit casinos where it hurts most. From regulatory complaints to coordinated legal demands, we leverage our international
+                presence to maximize pressure and secure settlements. Explore our key service areas below.
               </span>
             </IntroText>
           </StyledContainer>
@@ -68,23 +73,18 @@ export default function ServicesPage() {
             <BasicCard key={singleFeature.title} {...singleFeature} />
           ))}
         </CustomAutofitGrid>
-        <BasicSection
-          imageUrl="/menWalking.jpg"
-          title="Player Protection & Legal Expertise"
-          overTitle="First Section"
-        >
+        <BasicSection imageUrl="/menWalking.jpg" title="Global Legal Network & Expertise" overTitle="Our Reach">
           <p>
-            At Player Protection Legal, we specialize in defending players against unfair practices by online casinos. Our experienced team has over 12 years of expertise in navigating complex gaming disputes and securing favorable outcomes for our clients.
+            At Casino-Disputes.com, we are the global legal network with partners spanning multiple jurisdictions worldwide. Our specialized
+            expertise in offshore operators and proven success in over 1,000 cases makes us uniquely positioned to deliver justice where
+            others fail.
           </p>
         </BasicSection>
-        <BasicSection
-          imageUrl="/lawyer.png"
-          title="Comprehensive Dispute Resolution"
-          overTitle="Second Section"
-          reversed
-        >
+        <BasicSection imageUrl="/lawyer.png" title="Resolution-Focused Approach" overTitle="Our Strategy" reversed>
           <p>
-            We offer comprehensive dispute resolution services to help you recover your winnings and protect your rights. Whether you&apos;re facing withdrawal issues, account access problems, or bonus disputes, our team is here to help.
+            We prioritize fast settlements while maintaining persistent advocacy — fighting battles for up to 2 years when necessary.
+            Whether facing withdrawal blocks, account lockouts, or "bonus abuse" accusations, our coordinated legal demands maximize
+            pressure.
           </p>
         </BasicSection>
         <StyledContainer>
@@ -92,16 +92,20 @@ export default function ServicesPage() {
           <RichText>
             <ul>
               <li>
-                <strong>Lack of Robust Regulation:</strong> Casinos licensed in jurisdictions like Curaçao, Costa Rica, or Panama may not be subject to strict regulatory standards, allowing unethical practices to go unchecked.
+                <strong>Lack of Robust Regulation:</strong> Casinos licensed in jurisdictions like Curaçao, Costa Rica, or Panama may not be
+                subject to strict regulatory standards, allowing unethical practices to go unchecked.
               </li>
               <li>
-                <strong>Unfair Terms and Conditions:</strong> These platforms might impose unreasonable wagering requirements, withdrawal limits, or obscure clauses that disadvantage players.
+                <strong>Unfair Terms and Conditions:</strong> These platforms might impose unreasonable wagering requirements, withdrawal
+                limits, or obscure clauses that disadvantage players.
               </li>
               <li>
-                <strong>Limited Legal Recourse:</strong> Players often face challenges pursuing justice due to the international nature of these casinos and the complexities of cross-border laws.
+                <strong>Limited Legal Recourse:</strong> Players often face challenges pursuing justice due to the international nature of
+                these casinos and the complexities of cross-border laws.
               </li>
               <li>
-                <strong>Data Privacy Concerns:</strong> Inadequate oversight can lead to poor data protection measures, risking your personal and financial information.
+                <strong>Data Privacy Concerns:</strong> Inadequate oversight can lead to poor data protection measures, risking your
+                personal and financial information.
               </li>
             </ul>
           </RichText>
@@ -109,15 +113,28 @@ export default function ServicesPage() {
           <SubHeading>How We Can Assist You</SubHeading>
           <RichText>
             <ul>
-              <li><strong>Comprehensive Case Evaluation:</strong> We&apos;ll assess your situation thoroughly to determine the most effective legal strategy.</li>
-              <li><strong>No Upfront Fees:</strong> We operate on a contingency basis—you pay only after we successfully resolve your case and recover your winnings.</li>
-              <li><strong>Direct Action Against Casinos:</strong> We initiate legal proceedings or negotiate settlements with unlicensed or grey market casinos on your behalf.</li>
-              <li><strong>Regulatory Complaints:</strong> We file formal complaints with international regulatory bodies to expose unethical practices and seek broader industry changes.</li>
-              <li><strong>Data Privacy Enforcement:</strong> If your personal information has been compromised, we&apos;ll take action to address data breaches and secure remedies.</li>
+              <li>
+                <strong>Comprehensive Case Evaluation:</strong> We&apos;ll assess your situation thoroughly to determine the most effective
+                legal strategy.
+              </li>
+              <li>
+                <strong>No Upfront Fees:</strong> We operate on a contingency basis—you pay only after we successfully resolve your case and
+                recover your winnings.
+              </li>
+              <li>
+                <strong>Direct Action Against Casinos:</strong> We initiate legal proceedings or negotiate settlements with unlicensed or
+                grey market casinos on your behalf.
+              </li>
+              <li>
+                <strong>Regulatory Complaints:</strong> We file formal complaints with international regulatory bodies to expose unethical
+                practices and seek broader industry changes.
+              </li>
+              <li>
+                <strong>Data Privacy Enforcement:</strong> If your personal information has been compromised, we&apos;ll take action to
+                address data breaches and secure remedies.
+              </li>
             </ul>
           </RichText>
-
-          
         </StyledContainer>
       </Wrapper>
     </Page>
@@ -215,7 +232,7 @@ const SubHeading = styled.h2`
 const ContactBlock = styled.div`
   margin-top: 4rem;
   padding: 2.5rem 0;
-  border-top: 1px solid rgba(0,0,0,0.06);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
 `;
 
 const ContactTitle = styled.h3`
