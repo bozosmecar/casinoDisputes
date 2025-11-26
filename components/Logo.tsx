@@ -14,6 +14,6 @@ const LogoContainer = styled.div`
 `;
 
 const LogoImage = styled.img`
-  height: 65px;
+  height: 100px;
   width: auto;
 `;
