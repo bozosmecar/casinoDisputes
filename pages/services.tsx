@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import AutofitGrid from 'components/AutofitGrid';
 import BasicCard from 'components/BasicCard';
 import Page from 'components/Page';
-import SectionTitle from 'components/SectionTitle';
 import { media } from 'utils/media';
 import RichText from 'components/RichText';
 import Container from 'components/Container';
@@ -60,7 +59,7 @@ export default function ServicesPage() {
             <IntroText>
               <LetterA>A</LetterA>
               <span>
-                t Casino-Disputes.com, our global legal network doesn't just send complaint letters — we deploy localized legal strategies
+                t Casino-Disputes.com, our global legal network doesn&apos;t just send complaint letters — we deploy localized legal strategies
                 that hit casinos where it hurts most. From regulatory complaints to coordinated legal demands, we leverage our international
                 presence to maximize pressure and secure settlements. Explore our key service areas below.
               </span>
@@ -83,7 +82,7 @@ export default function ServicesPage() {
         <BasicSection imageUrl="/lawyer.png" title="Resolution-Focused Approach" overTitle="Our Strategy" reversed>
           <p>
             We prioritize fast settlements while maintaining persistent advocacy — fighting battles for up to 2 years when necessary.
-            Whether facing withdrawal blocks, account lockouts, or "bonus abuse" accusations, our coordinated legal demands maximize
+            Whether facing withdrawal blocks, account lockouts, or &quot;bonus abuse&quot; accusations, our coordinated legal demands maximize
             pressure.
           </p>
         </BasicSection>
@@ -229,22 +228,3 @@ const SubHeading = styled.h2`
   }
 `;
 
-const ContactBlock = styled.div`
-  margin-top: 4rem;
-  padding: 2.5rem 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
-`;
-
-const ContactTitle = styled.h3`
-  font-size: 2rem;
-  margin: 0 0 0.5rem 0;
-`;
-
-const ContactEmail = styled.div`
-  font-size: 1.6rem;
-  opacity: 0.9;
-  a {
-    color: rgb(var(--primary));
-    text-decoration: underline;
-  }
-`;

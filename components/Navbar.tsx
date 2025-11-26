@@ -1,4 +1,3 @@
-import dynamic from 'next/dynamic';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useRef, useState } from 'react';
@@ -6,7 +5,6 @@ import styled from 'styled-components';
 import { ScrollPositionEffectProps, useScrollPosition } from 'hooks/useScrollPosition';
 import { NavItems, SingleNavItem } from 'types';
 import { media } from 'utils/media';
-import Button from './Button';
 import Container from './Container';
 import Drawer from './Drawer';
 import { HamburgerIcon } from './HamburgerIcon';
@@ -96,11 +94,6 @@ function NavItem({ href, title, outlined }: SingleNavItem) {
     </NavItemWrapper>
   );
 }
-
-const CustomButton = styled(Button)`
-  padding: 0.75rem 1.5rem;
-  line-height: 1.8;
-`;
 
 const NavItemList = styled.div`
   display: flex;

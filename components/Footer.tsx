@@ -1,5 +1,4 @@
 import NextLink from 'next/link';
-import { FacebookIcon, LinkedinIcon, TwitterIcon } from 'react-share';
 import styled from 'styled-components';
 import Container from 'components/Container';
 import { media } from 'utils/media';
@@ -30,7 +29,6 @@ export default function Footer() {
             <FooterList key={singleItem.title} {...singleItem} />
           ))}
         </ListContainer>
-        
       </Container>
     </FooterWrapper>
   );
@@ -104,27 +102,5 @@ const ListItemWrapper = styled.p`
   a {
     text-decoration: none;
     color: rgba(var(--textSecondary), 0.75);
-  }
-`;
-
-const ShareBar = styled.div`
-  & > *:not(:first-child) {
-    margin-left: 1rem;
-  }
-`;
-
-const Copyright = styled.p`
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
-`;
-
-const BottomBar = styled.div`
-  margin-top: 6rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  ${media('<=tablet')} {
-    flex-direction: column;
   }
 `;

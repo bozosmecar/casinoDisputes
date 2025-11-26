@@ -61,10 +61,10 @@ export default function Homepage() {
                 <strong>Ignored self-exclusion</strong> → Full refund under duty of care laws
               </li>
               <li>
-                <strong>"Bonus abuse" accusations</strong> → Unfair terms invalidated
+                <strong>&quot;Bonus abuse&quot; accusations</strong> → Unfair terms invalidated
               </li>
               <li>
-                <strong>Withdrawals blocked "under review"</strong> → Immediate regulator escalation
+                <strong>Withdrawals blocked &quot;under review&quot;</strong> → Immediate regulator escalation
               </li>
               <li>
                 <strong>Account locked with balance</strong> → Chargeback + civil claim combination
@@ -76,7 +76,7 @@ export default function Homepage() {
           </BasicSection>
 
           <BasicSection imageUrl="/signing.png" title="Holding Offshore Casinos Accountable" overTitle="What we do">
-            <p>We've successfully challenged the most problematic offshore platforms, including:</p>
+            <p>We&apos;ve successfully challenged the most problematic offshore platforms, including:</p>
             <ul>
               <li>Curacao-licensed casino networks</li>
               <li>Crypto-only gambling platforms</li>

@@ -26,14 +26,3 @@ const ContactContainer = styled.div`
   }
 `;
 
-const Intro = styled.p`
-  flex-basis: 100%;
-  font-size: 1.8rem;
-  line-height: 1.6;
-  opacity: 0.9;
-  margin-bottom: 2.5rem;
-
-  ${media('<=tablet')} {
-    font-size: 1.6rem;
-  }
-`;

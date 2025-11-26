@@ -5,7 +5,7 @@ import 'swiper/css/autoplay';
 
 import { AppProps } from 'next/dist/shared/lib/router/router';
 import Head from 'next/head';
-import React, { PropsWithChildren } from 'react';
+import React from 'react';
 
 import Footer from 'components/Footer';
 import { GlobalStyle } from 'components/GlobalStyles';
