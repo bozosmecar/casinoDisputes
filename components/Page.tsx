@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import { PropsWithChildren } from 'react';
 import styled from 'styled-components';
-import { EnvVars } from 'env';
 import { media } from 'utils/media';
 import Container from './Container';
 import SectionTitle from './SectionTitle';
@@ -12,7 +11,7 @@ export interface PageProps {
 }
 
 export default function Page({ title, description, children }: PropsWithChildren<PageProps>) {
-  const fullTitle = `${title} | ${EnvVars.SITE_NAME}`;
+  const fullTitle = `${title} | Casino Disputes`;
   const metaDescription =
     description || 'Casino-Disputes.com - Global legal network that forces dishonest online casinos to return what they owe.';
 
@@ -24,16 +23,16 @@ export default function Page({ title, description, children }: PropsWithChildren
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={EnvVars.URL} />
+        <meta property="og:url" content="https://casino-disputes.vercel.app/" />
         <meta property="og:title" content={fullTitle} />
         <meta property="og:description" content={metaDescription} />
-        <meta property="og:image" content={`${EnvVars.URL}justice.png`} />
+        <meta property="og:image" content="https://casino-disputes.vercel.app/justice.png" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content={fullTitle} />
         <meta property="twitter:description" content={metaDescription} />
-        <meta property="twitter:image" content={`${EnvVars.URL}justice.png`} />
+        <meta property="twitter:image" content="https://casino-disputes.vercel.app/justice.png" />
       </Head>
       <Wrapper>
         <HeaderContainer>

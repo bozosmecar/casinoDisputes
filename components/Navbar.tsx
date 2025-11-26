@@ -12,7 +12,7 @@ import Drawer from './Drawer';
 import { HamburgerIcon } from './HamburgerIcon';
 import Logo from './Logo';
 
-const ColorSwitcher = dynamic(() => import('../components/ColorSwitcher'), { ssr: false });
+// ColorSwitcher removed - dark mode is always on
 
 type NavbarProps = { items: NavItems };
 type ScrollingDirections = 'up' | 'down' | 'none';
@@ -76,9 +76,7 @@ export default function Navbar({ items }: NavbarProps) {
             <NavItem key={singleItem.href} {...singleItem} />
           ))}
         </NavItemList>
-        <ColorSwitcherContainer>
-          <ColorSwitcher />
-        </ColorSwitcherContainer>
+        {/* Dark mode is always on - no switcher */}
         <HamburgerMenuWrapper>
           <HamburgerIcon aria-label="Toggle menu" onClick={toggle} />
         </HamburgerMenuWrapper>
@@ -89,7 +87,7 @@ export default function Navbar({ items }: NavbarProps) {
 
 function NavItem({ href, title, outlined }: SingleNavItem) {
   // Newsletter modal removed - outlined nav items no longer needed
-  
+
   return (
     <NavItemWrapper outlined={outlined}>
       <NextLink href={href} passHref>
@@ -176,9 +174,4 @@ const Content = styled(Container)`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-`;
-
-const ColorSwitcherContainer = styled.div`
-  width: 4rem;
-  margin: 0 1rem;
 `;
