@@ -5,6 +5,16 @@ export default async function SendEmail(req: NextApiRequest, res: NextApiRespons
   const { subject, description, email, name } = req.body;
   const referer = req.headers.referer;
 
+  // Debug: Check if environment variables are loaded
+  console.log('GMAIL_USER exists:', !!process.env.GMAIL_USER);
+  console.log('GMAIL_PASSWORD exists:', !!process.env.GMAIL_PASSWORD);
+  console.log('GMAIL_RECIPIENT_EMAIL:', process.env.GMAIL_RECIPIENT_EMAIL || 'not set');
+
+  if (!process.env.GMAIL_USER || !process.env.GMAIL_PASSWORD) {
+    console.error('Missing Gmail credentials in environment variables');
+    return res.status(500).json({ message: 'Email service not configured' });
+  }
+
   // Create transporter using Gmail
   const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -36,9 +46,16 @@ export default async function SendEmail(req: NextApiRequest, res: NextApiRespons
 
   try {
     await transporter.sendMail(mailOptions);
+    console.log('Email sent successfully');
     res.status(204).end();
-  } catch (error) {
-    console.log('ERROR sending email:', error);
-    res.status(400).send({ message: error });
+  } catch (error: any) {
+    console.error('ERROR sending email:', error);
+    console.error('Error code:', error.code);
+    console.error('Error message:', error.message);
+    console.error('Error response:', error.response);
+    res.status(400).json({ 
+      message: error.message || 'Failed to send email',
+      error: error.toString() 
+    });
   }
 }
