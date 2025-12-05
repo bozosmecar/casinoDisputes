@@ -8,7 +8,7 @@ export default function ContactPage() {
   return (
     <Page
       title="Contact"
-      description="Get a free consultation from Casino-Disputes.com. Our global legal network forces dishonest casinos to return what they owe. No-Win, No-Fee."
+      description="Get a free consultation from CasinoDisputes.com. Our global legal network forces dishonest casinos to return what they owe. No-Win, No-Fee."
     >
       <ContactContainer>
         <InformationSection />
@@ -25,4 +25,3 @@ const ContactContainer = styled.div`
     flex-direction: column;
   }
 `;
-

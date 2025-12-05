@@ -19,7 +19,7 @@ export default function WaveCta() {
       <CtaWrapper>
         <Container>
           <Title>Contact Us 24/7</Title>
-          <Email>contact@casino-disputes.com</Email>
+          <Email>casinodisputes370@gmail.com</Email>
           <Divider>OR</Divider>
           <ConsultationTitle>Get Your Free Consultation!</ConsultationTitle>
           <CustomButtonGroup>
